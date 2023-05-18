@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Ishika Gumber | Aspiring full stack developer
+  </title>
+
+  <meta name="description" content="I am pursuing Btech in Information Technology from Amity University Noida">
+  
+  <meta name="keywords" content="ishika, webdeveloper, coding, programming, designing" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"> <a href="#work" class="nav__link">Projects</a></li>
+          
+          <li class="nav__item"> <a href="#s-experience" class="nav__link">Experiences</a></li>
+          <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Ishika Gumber</span>
+        </h1>
+        <p>Aspiring Full Stack Web developer, pursuing Btech in Information Technology</p>
+        <a href="#contact" class="btn btn--purple">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Impact of global warming on food
+                supply</h3>
+              <p>
+                A website to display the impact on food supply chain due to
+                increasing global warming in the forms of charts/tables
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+              </ul>
+
+              
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project1.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Artificial Intelligence in Medicine and
+                Healthcare</h3>
+              <p>
+                Aims for early detection of various chronic disease. 
+              </p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project2.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Medical Image Processing</h3>
+              <p>
+                Image processing techniques which allows extraction of diseased
+regions and abnormal areas from MRIs and also better for image display, implementation using Deep Learning concepts. 
+              </p>
+              <ul class="work__list">
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML</li>
+                
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project3.jpg" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Gallery ***** -->
+
+    <h2 style="margin: 30px;">Image Gallery</h2>
+
+    <!-- Thumbnail Images -->
+    <div class="gallery">
+      <div class="thumbnail" onclick="openModal('./images/project1.jpg')">
+        <img src="./images/project1.jpg" alt="Thumbnail 1">
+      </div>
+      <div class="thumbnail" onclick="openModal('./images/part1.jpeg')">
+        <img src="./images/part1.jpeg" alt="Thumbnail 2">
+      </div>
+      <div class="thumbnail" onclick="openModal('./images/part2.jpeg')">
+        <img src="./images/part2.jpeg" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openModal('./images/project2.jpg')">
+        <img src="./images/project2.jpg" alt="Thumbnail 1">
+      </div>
+      <div class="thumbnail" onclick="openModal('./images/part3.jpeg')">
+        <img src="./images/part3.jpeg" alt="Thumbnail 2">
+      </div>
+      <div class="thumbnail" onclick="openModal('./images/part4.jpeg')">
+        <img src="./images/part4.jpeg" alt="Thumbnail 3">
+      </div>
+      <!-- Add more thumbnail images here -->
+    </div>
+  
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Enlarged Image">
+      </div>
+    </div>
+
+
+        
+    <script>
+      function openModal(imageUrl) {
+        var modal = document.getElementById("myModal");
+        var modalImage = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImage.src = imageUrl;
+      }
+  
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+    </script>
+    
+    </section>
+
+    <!-- Experiences -->
+
+    <section id="s-experience">
+      <div class="grid-layout">
+        <h2 class="delaySmallReveal">Experiences  <span>.</span></h2>
+        <div id="experience">
+          <div
+            class="option-experience intervalCardReveal"
+            id="experience-company"
+          >
+            <div class="company digitalhouse activeExperience">
+              <h3>RHA: Robin Hood Armu, NGO Noida</h3>
+            </div>
+            <div class="company zuplae">
+              <h3>Noida</h3>
+            </div>
+            <div class="company contweb">
+              <h4>Uttar Pradesh</h4>
+            </div>
+            <div class="company codigofontetv">
+              <h5>201301</h5>
+            </div>
+          </div>
+          <div class="text-experience intervalCardReveal">
+            <div>
+              <h4 class="titleExperience">
+                Human Values & Ethics
+              </h4>
+              <p class="dateExperience"> Jan 2023 - May 2023</p>
+            </div>
+            <h5 class="companyExperience">Learner</h5>
+            <p class="changeExperience">
+              Done 40 drives: Food drives, Academy and special drives (APNA GHAR women
+              ashram drive). 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              To pursue a career oriented position in a challenging environment which utilizes my personal skills, inspires me to
+              enhance them and add subsequent value to the organization
+
+            </p>
+            <a href="https://www.linkedin.com/in/ishika-gumber-761803255/" class="btn">My Linkedin</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/profile.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <!-- <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          To pursue a career oriented position in a challenging environment which utilizes my personal skills, inspires me to
+          enhance them and add subsequent value to the organization.
+          Want to ask questions? Or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        
+        <a href="mailto:ishikagumber11@gmail.com " class="btn">ishikagumber11@gmail.com </a>
+      </div>
+    </div> -->
+    <div class="form-container">
+      <h2>Drop me a message</h2>
+      <div id="error_message"></div>
+      <form id="myform" onsubmit="return false;">
+        <label for="name">* Name</label>
+          <div class="input_field">
+              <input type="text" placeholder="Name" id="name">
+          </div>
+          <label for="email">* Email</label>
+
+          <div class="input_field">
+              <input type="email" placeholder="Email" id="email">
+          </div>
+          <label for="phone">* Phone</label>
+
+          <div class="input_field">
+              <input type="number" placeholder="Phone" id="phone">
+          </div>
+          <label for="subject">* Message</label>
+          <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+          <span class="errors"></span><br>
+          <!-- <div class="btn">
+              <input type="submit" value="GET A CALL" onclick="return validate();">
+          </div> -->
+          <button type="submit" value="Submit" onclick="return validate()">Submit</button>
+
+      </form>
+  </div>
+
+  <script>
+    console.log("Hello")
+
+
+
+function validate(){
+    let name=document.getElementById("name").value;
+    let email=document.getElementById("email");
+    let phone=document.getElementById("phone");
+ 
+    if (name.length <3){
+        error_message.innerHTML="Enter a valid name!"
+        return;
+    }
+
+    if (email.value.indexOf("@")==-1 || email.value.length<7){
+        error_message.innerHTML="Enter a valid email!"
+        return;
+    }
+
+    if (phone.value.length!==10){
+        error_message.innerHTML="Enter a valid phone number!"
+        return;
+    }
+    console.log("Name: "+name,"Email: "+email.value,"Phone: "+phone.value);
+    error_message.style.background="green"
+    error_message.style.color="white"
+    error_message.innerHTML="I will get back to you shortly!"
+    alert("Form submitted successfully!")
+}
+  </script>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        
+        <li class="footer__social-link-item">
+          <a href="#" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/ishika-gumber-761803255/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div> -->
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
